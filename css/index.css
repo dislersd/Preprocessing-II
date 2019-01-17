@@ -255,3 +255,19 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.btn {
+  background: #fae;
+  width: 90%;
+  padding: 2rem;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.btn:hover {
+  box-shadow: -2px 2px #212529;
+}

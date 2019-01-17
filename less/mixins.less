@@ -5,7 +5,25 @@
   align-items: baseline;
 }
 
+.flex-custom(@justify, @align) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .linkNormalize (@color) {
   text-decoration: none;
   color: @color;
+}
+
+.custom-btn(@width, @padding, @color, @bgcolor) {
+  width: @width;
+  padding: @padding;
+  color: @color;
+  background-color: @bgcolor;
+  cursor: pointer;
+  
+  &:hover {
+    box-shadow: -2px 2px @shark;
+  }
 }
