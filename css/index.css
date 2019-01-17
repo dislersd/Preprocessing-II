@@ -186,11 +186,39 @@ img {
   justify-content: space-between;
   align-items: baseline;
 }
+@media (max-width: 500px) {
+  .nav-section div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-section div nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav-section div nav a {
+    font-size: 1.6rem;
+    margin: 1rem;
+  }
+  .nav-section div nav h1 {
+    margin-bottom: 4rem;
+  }
+}
+.nav-section div h1 {
+  white-space: nowrap;
+}
+.nav-section div nav {
+  white-space: nowrap;
+}
 .nav-section div nav a {
-  margin: 0 20px;
+  margin: 0 10px;
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+  white-space: nowrap;
 }
 .footer {
   width: 100%;
@@ -203,10 +231,29 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home img {
+.home {
+  width: 82%;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.home .intro img {
   margin-bottom: 2rem;
 }
-.home p {
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+.home .intro p {
   border-bottom: 1px dashed #C0C0C0;
 }
 .home .content-section {
@@ -215,16 +262,37 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -256,18 +324,19 @@ img {
   margin-bottom: 30px;
 }
 .btn {
-  background: #fae;
-  width: 90%;
-  padding: 2rem;
+  width: 100%;
+  padding: 1.5rem;
   color: #FFFFFF;
   background-color: #17A2B8;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   margin-top: 1rem;
+  font-size: 2rem;
 }
 .btn:hover {
-  box-shadow: -2px 2px #212529;
+  background-color: #dadada;
+  color: #17A2B8;
 }
