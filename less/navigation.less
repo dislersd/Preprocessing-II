@@ -1,1 +1,46 @@
 // Navigation Styles here
+.nav-section {
+  border-bottom: 1px dashed @silver;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px;
+    
+  div { 
+      width: 82%;
+      .flex-SpaceBtwn-Baseline;
+      
+      // mediaQ
+      @media @mobile {
+        flex-direction: column;
+        align-items: center;
+        nav {
+          .flex-custom(space-evenly, center);
+          flex-wrap: nowrap;
+          width: 100%;
+          margin: 0 auto;
+          a {
+            font-size: @s;
+            margin: 1rem;
+          }
+          h1 {
+            margin-bottom: 4rem;
+          }
+        }
+      }
+      //end mediaQ 
+
+      h1 {
+        white-space: nowrap;
+      }
+      nav {
+            white-space: nowrap;
+        a {
+            margin: 0 10px;
+            .linkNormalize(black);
+            font-size: @s;
+            white-space: nowrap;
+      }
+    }
+  }
+}
